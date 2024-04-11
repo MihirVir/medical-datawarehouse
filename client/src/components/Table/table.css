@@ -1,0 +1,59 @@
+.container-main {
+    height: 90vh;
+}
+table {
+    width: 100%;
+    height: 100%;
+}
+th {
+    text-align: left;
+    background-color: white;
+    color: black;
+    
+}
+.btn-del {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.spc {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-number-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.system {
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+th, td {
+    text-align: left;
+    padding: .2rem;
+    width: calc(100% / 11);
+    height: calc(100% / 10);  
+}
+td {
+    background-color: #78716c;
+}
+.page-changer-container {
+    margin-top: 1rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+ 
+}

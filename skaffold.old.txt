@@ -1,0 +1,28 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+deploy:
+  kubectl:
+    manifests:
+      - ./infra/k8s/*
+build:
+  # local:
+  #   push: false
+  googleCloudBuild:
+    projectId: ultra-bearing-406415
+  artifacts:
+    - image: us.gcr.io/ultra-bearing-406415/backend
+      context: backend
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "/**/*.js"
+            dest: .
+    - image: us.gcr.io/ultra-bearing-406415/frontend
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '/**/*.js'
+            dest: .

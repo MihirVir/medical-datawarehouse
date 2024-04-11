@@ -1,0 +1,79 @@
+.analytics-board {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    width: 40vw;
+    color: black;
+    padding: 1.25rem;
+    position: relative;
+    border-radius: 1px;
+    height: 30vh;
+    transition: all 200ms ease-in;
+}
+.icon-container-card {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    transform: rotate(18deg);
+    animation: weirdAnime 5000ms infinite ease-in-out;
+}
+
+@keyframes weirdAnime {
+    0% {
+        transform: translateX(-10px);
+    } 25% {
+        transform: translateX(10px);
+    } 50% {
+        transform: translateY(-10px);
+    } 75% {
+        transform: translateY(10px);
+    } 100% {
+        transform: translateX(-10px);
+    }
+    
+}
+
+.card h4 {
+    font-size: 1.5rem;
+}
+.card p {
+    font-size: 1.2rem;
+}
+.special-card {
+    background-color: white;
+    width: 40vw;
+    color: black;
+    padding: 1.25rem;
+    height: 30vh;
+    border-radius: 1px;
+    transition: all 200ms ease-in-out;
+}
+.custom-table {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .2rem;
+    border: 1px solid black;
+}
+.special-card h2 {
+    font-size: 2rem;
+}
+.custom-table span {
+    width: calc(100% / 3);
+    border-right: 1px solid black;
+    padding: .2rem;
+}
+.medication {
+    height: 50vh;
+}
+
+.card:hover {
+    transform:scale(1.02);
+}
+.special-card:hover {
+    transform: scale(1.02);
+}

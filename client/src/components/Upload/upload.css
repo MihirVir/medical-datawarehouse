@@ -1,0 +1,42 @@
+.form-container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input[type="file"] {
+    display: none;
+}
+
+form label {
+    cursor: pointer;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    height: 30vh;
+    font-size: 3rem;
+    background-color: #64748b;
+    border-radius: 2px;
+    transition: all 140ms ease-in-out;
+}
+
+form button {
+    padding: 1rem;
+    background-color: #7dd3fc;
+    border: none;
+}
+
+form label:hover {
+    background-color: #1f2937;
+}
